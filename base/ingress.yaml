@@ -14,7 +14,7 @@ spec:
       kind: Rule
       services:
         - name: geekconsole
-          port: 3000
+          port: 8080
       middlewares:
         - name: default-headers
   tls:

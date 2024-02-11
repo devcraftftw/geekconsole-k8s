@@ -1,0 +1,15 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+images:
+  - name: devcraftftw/geekconsole
+    newName: ghcr.io/devcraftftw/geekconsole
+    newTag: stable-20240206-b8e7cff
+  # - name: devcraftftw/wordsmith-web
+  #   newName: ghcr.io/<org>/wordsmith-web
+  #   newTag: stable-<your-unique-tag>
+# configMapGenerator:
+# - files:
+#   - words.sql
+#   name: db-schema
+resources:
+- ../../base

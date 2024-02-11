@@ -1,0 +1,23 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: geekconsole
+  labels:
+    app: geekconsole
+spec:
+  selector:
+    matchLabels:
+      app: geekconsole
+  template:
+    metadata:
+      labels:
+        app: geekconsole
+    spec:
+      containers:
+        - name: geekconsole
+          image: devcraftftw/geekconsole
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+              name: web

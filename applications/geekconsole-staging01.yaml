@@ -8,7 +8,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/devcraftftw/wordsmith-k8s.git'
+    repoURL: 'https://github.com/devcraftftw/geekconsole.git'
     path: environments/staging01
     targetRevision: main
   destination:

@@ -7,9 +7,8 @@ metadata:
     app: geekconsole
 spec:
   ports:
-    - port: 8080
-      targetPort: 3000
-      name: geekconsole
-  selector:
-    app: geekconsole
-  type: NodePort
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 3000
+  type: LoadBalancer

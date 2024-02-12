@@ -10,12 +10,12 @@ spec:
   entryPoints:
     - websecure
   routes:
-    - match: Host(`geekconsole.devcraft.app`) # change to your domain
+    - match: Host(`geekconsole.devcraft.app`)
       kind: Rule
       services:
         - name: geekconsole
-          port: 8080
+          port: 80
       middlewares:
         - name: default-headers
   tls:
-    secretName: devcraft-tls # change to your cert name
+    secretName: devcraft-tls

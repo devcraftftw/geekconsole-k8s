@@ -4,5 +4,7 @@ kind: Kustomization
 resources:
   - deployment.yaml
   - service.yaml
-  - ingress.yaml
-  - default-headers.yaml
+  - ingress-stage.yaml
+  - ingress-prod.yaml
+  - default-headers-stage.yaml
+  - default-headers-prod.yaml

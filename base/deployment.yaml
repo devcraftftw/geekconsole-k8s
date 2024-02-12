@@ -19,7 +19,7 @@ spec:
           image: devcraftftw/geekconsole
           imagePullPolicy: Always
           ports:
-          - name: geekconsole-http
+          - name: http
             containerPort: 3000
             protocol: TCP
           env:

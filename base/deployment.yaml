@@ -18,6 +18,44 @@ spec:
         - name: geekconsole
           image: devcraftftw/geekconsole
           imagePullPolicy: Always
-          # ports:
-          #   - containerPort: 3000
-          #     name: web
+          env:
+            - name: GITHUB_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: geekconsole
+                  key: GITHUB_CLIENT_ID
+            - name: GITHUB_CLIENT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: geekconsole
+                  key: GITHUB_CLIENT_SECRET
+            - name: GITHUB_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: geekconsole
+                  key: GITHUB_TOKEN
+            - name: HONEYPOT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: geekconsole
+                  key: HONEYPOT_SECRET
+            - name: INTERNAL_COMMAND_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: geekconsole
+                  key: INTERNAL_COMMAND_TOKEN
+            - name: RESEND_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: geekconsole
+                  key: RESEND_API_KEY
+            - name: SENTRY_DSN
+              valueFrom:
+                secretKeyRef:
+                  name: geekconsole
+                  key: SENTRY_DSN
+            - name: SESSION_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: geekconsole
+                  key: SESSION_SECRET

@@ -18,6 +18,8 @@ spec:
         - name: geekconsole
           image: devcraftftw/geekconsole
           imagePullPolicy: Always
+          ports:
+          - containerPort: 3000
           env:
             - name: GITHUB_CLIENT_ID
               valueFrom:

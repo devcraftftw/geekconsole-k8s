@@ -3,7 +3,7 @@ kind: Kustomization
 images:
   - name: devcraftftw/geekconsole
     newName: ghcr.io/devcraftftw/geekconsole
-    newTag: stable-20240206-b8e7cff
+    newTag: '7794754809'
   # - name: devcraftftw/wordsmith-web
   #   newName: ghcr.io/<org>/wordsmith-web
   #   newTag: stable-<your-unique-tag>

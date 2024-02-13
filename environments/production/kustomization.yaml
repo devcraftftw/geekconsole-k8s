@@ -5,7 +5,7 @@ images:
   newName: ghcr.io/devcraftftw/geekconsole
   newTag: latest
 - name: ghcr.io/devcraftftw/geekconsole-stable
-  newTag: stable-20240213-060748b
+  newTag: 20240213-21fc9a9
   # - name: devcraftftw/wordsmith-web
   #   newName: ghcr.io/<org>/wordsmith-web
   #   newTag: stable-<your-unique-tag>

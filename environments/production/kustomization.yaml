@@ -4,6 +4,8 @@ images:
 - name: devcraftftw/geekconsole
   newName: ghcr.io/devcraftftw/geekconsole-stable
   newTag: 20240213-21fc9a9
+- name: ghcr.io/devcraftftw/geekconsole-stable
+  newTag: 20240213-f8e3042
 # configMapGenerator:
 # - files:
 #   - words.sql

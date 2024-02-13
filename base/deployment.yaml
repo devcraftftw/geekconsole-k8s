@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: geekconsole
-          image: devcraftftw/geekconsole
+          image: ghcr.io/devcraftftw/geekconsole-stable
           imagePullPolicy: Always
           ports:
           - name: http

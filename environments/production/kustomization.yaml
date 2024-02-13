@@ -1,9 +1,11 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
-  - name: devcraftftw/geekconsole
-    newName: ghcr.io/devcraftftw/geekconsole
-    newTag: 'latest'
+- name: devcraftftw/geekconsole
+  newName: ghcr.io/devcraftftw/geekconsole
+  newTag: latest
+- name: ghcr.io/devcraftftw/geekconsole-stable
+  newTag: stable-20240213-060748b
   # - name: devcraftftw/wordsmith-web
   #   newName: ghcr.io/<org>/wordsmith-web
   #   newTag: stable-<your-unique-tag>
